@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu</title>
+    <style>
+        #rules{
+            text-align: center;
+            font-family: 'Montserrat';
+            font-size: 16px;
+            width: 400px;
+            height: 420px;
+            margin-left: 30%;
+        }
+        .form-control{
+            width: 400px;
+            height: 35px;
+            margin-left: 30%;
+        }
+        .btn{
+            margin-right: 20%;
+            height: 35px;
+            width: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Entre une proposition !">
+        <button class="btn" type="button">GO</button>
+    </div>
+    <div id="plus-ou-moins-spot">
+        
+    </div>
+        
+        <p class="lh-1" id="rules">Expliquation du jeu 🙂 <br>
+        1. Un nombre est généré en début de partie <br>
+        2. L'utilisateur rentre ses propositions dans le champ d'entrée. <br>
+        3. Si la valeur est supérieur au nombre généré, "Moins !" s'affiche en dessous du champs d'entrée <br>
+        4. Sinon, "Plus !" s'affiche sous le champs d'entrée !<br>
+        
+        Questions additionnelles : <br>
+        5. Ajouter une couleur de fond aléatoire (qui change à chaque fois que l'utilisateur relance la page)<br>
+        6. Si vous finissez tôt, amusez-vous sur le CSS en attendant !</p>
+
+    <script src="jeu.js"></script>
+</body>
+</html>

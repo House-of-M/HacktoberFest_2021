@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: auto;
+            height: 30%;
+            width: 100%;
+        }
+
+        user-input {
+            margin: auto;
+            width: 50%;
+            height: 100%;
+        }
+
+        #submit {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        #guess {
+            width: 200px;
+            height: 40px;
+        }
+
+        button {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="js-user-input user-input">
+            <p>try to guess the number !</p>
+            <input type="text" id="guess" placeholder="Guess the number...">
+            <button id="submit" value="TRY">TRY</button>
+        </div>
+        <div class="js-manipulation">
+            <h1>lets see your guesses!</h1>
+        </div>
+    </div>
+    <script src="event.js"></script>
+</body>
+
+</html>

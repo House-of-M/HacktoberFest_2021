@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets\css\style.css" rel="stylesheet" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <!--DEBUT DU BODY-->
+
+    <!--CHEKBOX POUR LE BOUTON DE MODE DARK/LIGHT-->
+    <input type="checkbox" class="checkboxMod" id="check" />
+
+    <!--BODY CONTAINER-->
+    <div class="bodyContainer">
+      <!-- LABEL + ICONE SI LA CHECKBOX EST UNCHECK-->
+      <label class="labelMod" for="check">
+        <i class="light_icon"><img src="assets/img/torch_on.png" /></i>
+        <!-- <i class="dark_icon"><img src="assets/img/torch_off.png"/></i> -->
+      </label>
+
+      <!--ICONE SI LA CHECKBOX EST CHECK-->
+      <span class="imageMod">
+        <!-- <i class="light_icon"><img src="assets/img/torch_on.png"/></i> -->
+        <i class="dark_icon"><img src="assets/img/torch_off.png" /></i>
+      </span>
+
+      <!--DEBUT DU HEADER-->
+      <header>
+        <img src="assets\img\logo.png" />
+
+        <!-- MENU DE NAVIGATION-->
+        <nav>
+          <a href="index.html">Accueil</a>
+          <a href="blog.html">blog</a>
+          <a href="add.html">add</a>
+          <a href="about_us.html">about us</a>
+        </nav>
+      </header>
+
+      <!--FIN DU HEADER-->
+
+      <!-- DEBUT DU MAIN-->
+      <main>
+        <!--DEBUT DU MAIN CONTAINER-->
+        <div class="mainContainer" id="haut_de_page">
+          <!--CHECKBOX POUR L'AFFICHAGE EN GRAND OU NON DU PREMIER ARTICLE-->
+          <input type="checkbox" class="checkboxBlog1" id="checkBlog1" />
+          <section>
+            <!--LABEL LIE A LA CHECKBOX PRECEDENTE, POUR L'ARTICLE EN GRAND, DISPLAY NONE SAUF SI LA CKECKBOX EST CHECK-->
+            <label class="labelGrand" for="checkBlog1">
+              <!--ARTICLE EN VERSION GRAND-->
+              <div class="grandBlog">
+                <div class="imgContainer">
+                  <img src="assets\img\jujutsu.jpg" alt="jujutsu Kaisen" />
+                </div>
+                <h2>Jujutsu Kaisen</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Eligendi cumque rem cupiditate explicabo enim quo eos. Dolore,
+                  voluptatum fuga. Optio expedita dolorum tempora ex earum, vel
+                  distinctio ab quisquam non aliquam laudantium laborum possimus
+                  officiis perspiciatis vitae quis! Voluptas, laborum assumenda
+                  nostrum illum neque eum. Voluptatibus unde laudantium iusto
+                  deserunt harum corrupti dolorum consequuntur dignissimos
+                  perferendis ipsa ratione veritatis exercitationem dicta eius
+                  consectetur optio temporibus, ipsam cumque molestias?
+                  Consectetur deleniti hic eaque ratione, ullam voluptas
+                  praesentium dolores. Adipisci, nam. Deleniti, consequuntur ab
+                  dolore, itaque consectetur in, quod magnam quas voluptates
+                  iusto perferendis? Tempora sit impedit ut deleniti ipsum iure
+                  hic magnam, veniam, vitae consequatur voluptatum itaque
+                  officiis cumque magni quas error quidem non quibusdam
+                  molestias incidunt? Repellat, accusantium, blanditiis atque
+                  ipsa est velit repudiandae eius dolorem harum tenetur,
+                  laboriosam ad ducimus praesentium pariatur. Praesentium
+                  laborum repellendus debitis reiciendis saepe laudantium
+                  perspiciatis voluptatum modi. Temporibus commodi quis sequi
+                  qui deleniti ratione dolore doloremque. Perspiciatis beatae
+                  neque non. Quaerat explicabo molestias doloremque nulla!
+                  Repellendus et totam minus, numquam magnam doloribus ipsa
+                  deleniti nisi sunt tenetur eligendi temporibus velit dolores
+                  eius iure culpa atque doloremque, dignissimos, odit voluptate
+                  ea! Esse obcaecati quo, perspiciatis expedita fugit, illum
+                  voluptatibus necessitatibus nam nulla soluta, ipsum iusto
+                  eaque dignissimos. Laborum possimus iusto tempora veniam, id
+                  hic, voluptatem fugit doloribus mollitia, cum nulla temporibus
+                  similique incidunt reprehenderit quam tempore praesentium
+                  dolor placeat expedita nostrum amet? Necessitatibus, autem,
+                  nam doloremque illum distinctio omnis quasi nemo ab ea minima
+                  quibusdam molestiae, nulla facere architecto ipsa maiores!
+                  Temporibus maxime ad laudantium. Pariatur ipsam illo soluta
+                  sapiente, unde facilis qui sed quasi dolor numquam ad
+                  voluptas, voluptatibus at distinctio, fuga officiis alias
+                  voluptatem suscipit itaque eveniet! Quia, reiciendis ab
+                  exercitationem et sed totam in illum delectus, accusantium
+                  molestias rem qui unde dolor neque sint consequatur iste.
+                  Aspernatur, suscipit quas. Labore, cum culpa!
+                </p>
+              </div>
+              <!--FIN DE L'ARTICLE EN GRAND-->
+            </label>
+            <!--FIN DU LABEL POUR LA VERSION GRANDE DE L'ARTICLE-->
+
+            <!--LABEL POUR LA MEME CHECKBOX QUE LE LABEL PRECEDENT POUR AFFICHER L'ARTICLE NORMAL AU UNCHECK -->
+            <label class="labelBlog1" for="checkBlog1">
+              <!--L'ARTICLE NORMAL-->
+              <article>
+                <div class="imgBlog">
+                  <img src="assets\img\jujutsu.jpg" alt="" />
+                </div>
+                <div class="paragrapheBlog">
+                  <h2>jujutsu kaisen</h2>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Odit, aspernatur doloribus repellat magnam, hic eligendi
+                  libero iusto rerum autem quos amet blanditiis distinctio
+                  excepturi ut nihil dolore possimus sit placeat? Voluptates
+                  dolorum suscipit aperiam, reprehenderit ad numquam quam sequi
+                  placeat beatae iste aut quis architecto explicabo, eius
+                  dolorem, nulla repellendus perspiciatis! Beatae consectetur
+                  aut amet. Quisquam consequuntur aliquid at voluptates? Facere
+                  iste reprehenderit aliquid iusto quos suscipit, deleniti
+                  molestias, totam quidem debitis fugiat minus magnam quia
+                  voluptatem, atque rem natus dolor voluptatum rerum accusamus
+                  asperiores blanditiis. Dolore, provident! Quia sed, voluptate
+                  incidunt dicta ea cumque dignissimos harum nobis mollitia
+                  corrupti!
+                </div>
+              </article>
+            </label>
+          </section>
+
+          <!--MEME FORMAT D'ABORD LA CHECKBOX CACHE-->
+          <input type="checkbox" class="checkboxBlog2" id="checkBlog2" />
+          <section>
+            <!--LE LABEL POUR LA VERSION GRANDE-->
+            <label class="labelGrand" for="checkBlog2">
+              <!--L'ARTICLE EN GRAND-->
+              <div class="grandBlog">
+                <div class="imgContainer">
+                  <img src="assets\img\re_zero.webp" alt=" RE : ZERO" />
+                </div>
+                <h2>Re:zero</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Eligendi cumque rem cupiditate explicabo enim quo eos. Dolore,
+                  voluptatum fuga. Optio expedita dolorum tempora ex earum, vel
+                  distinctio ab quisquam non aliquam laudantium laborum possimus
+                  officiis perspiciatis vitae quis! Voluptas, laborum assumenda
+                  nostrum illum neque eum. Voluptatibus unde laudantium iusto
+                  deserunt harum corrupti dolorum consequuntur dignissimos
+                  perferendis ipsa ratione veritatis exercitationem dicta eius
+                  consectetur optio temporibus, ipsam cumque molestias?
+                  Consectetur deleniti hic eaque ratione, ullam voluptas
+                  praesentium dolores. Adipisci, nam. Deleniti, consequuntur ab
+                  dolore, itaque consectetur in, quod magnam quas voluptates
+                  iusto perferendis? Tempora sit impedit ut deleniti ipsum iure
+                  hic magnam, veniam, vitae consequatur voluptatum itaque
+                  officiis cumque magni quas error quidem non quibusdam
+                  molestias incidunt? Repellat, accusantium, blanditiis atque
+                  ipsa est velit repudiandae eius dolorem harum tenetur,
+                  laboriosam ad ducimus praesentium pariatur. Praesentium
+                  laborum repellendus debitis reiciendis saepe laudantium
+                  perspiciatis voluptatum modi. Temporibus commodi quis sequi
+                  qui deleniti ratione dolore doloremque. Perspiciatis beatae
+                  neque non. Quaerat explicabo molestias doloremque nulla!
+                  Repellendus et totam minus, numquam magnam doloribus ipsa
+                  deleniti nisi sunt tenetur eligendi temporibus velit dolores
+                  eius iure culpa atque doloremque, dignissimos, odit voluptate
+                  ea! Esse obcaecati quo, perspiciatis expedita fugit, illum
+                  voluptatibus necessitatibus nam nulla soluta, ipsum iusto
+                  eaque dignissimos. Laborum possimus iusto tempora veniam, id
+                  hic, voluptatem fugit doloribus mollitia, cum nulla temporibus
+                  similique incidunt reprehenderit quam tempore praesentium
+                  dolor placeat expedita nostrum amet? Necessitatibus, autem,
+                  nam doloremque illum distinctio omnis quasi nemo ab ea minima
+                  quibusdam molestiae, nulla facere architecto ipsa maiores!
+                  Temporibus maxime ad laudantium. Pariatur ipsam illo soluta
+                  sapiente, unde facilis qui sed quasi dolor numquam ad
+                  voluptas, voluptatibus at distinctio, fuga officiis alias
+                  voluptatem suscipit itaque eveniet! Quia, reiciendis ab
+                  exercitationem et sed totam in illum delectus, accusantium
+                  molestias rem qui unde dolor neque sint consequatur iste.
+                  Aspernatur, suscipit quas. Labore, cum culpa!
+                </p>
+              </div>
+            </label>
+
+            <!--LABEL POUR L'ARTICLE NORMAL-->
+            <label class="labelBlog2" for="checkBlog2">
+              <!--L'ARTICLE EN SOI-->
+              <article>
+                <div class="imgBlog">
+                  <img src="assets\img\re_zero.webp" alt="" />
+                </div>
+                <div class="paragrapheBlog">
+                  <h2>re:zero</h2>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  molestias facilis possimus ex provident blanditiis quos enim
+                  inventore quas exercitationem neque atque asperiores officiis
+                  maxime, aut vel et consequatur impedit eveniet nemo, omnis
+                  odit! Exercitationem obcaecati excepturi quia ea maxime
+                  nostrum illum asperiores quas, eius possimus, dolor,
+                  praesentium incidunt repellat explicabo qui! Omnis atque ex
+                  reiciendis perferendis molestiae id tempore voluptate. Dolorem
+                  sapiente reiciendis earum temporibus vero minima porro amet
+                  molestiae autem impedit quam consectetur iure, reprehenderit
+                  nemo id ex officiis unde cum at ratione asperiores. Aspernatur
+                  eos optio laboriosam fuga omnis. Soluta, omnis. Illum aliquam
+                  iste possimus doloribus atque.
+                </div>
+              </article>
+            </label>
+          </section>
+
+          <!--MEME PRINCIPE TOUJOURS DEBUT DE LA CHECKBOX POUR L'ARTICLE-->
+          <input type="checkbox" class="checkboxBlog3" id="checkBlog3" />
+          <section>
+            <!--LABEL POUR L'ARTICLE VERSION GRAND-->
+            <label class="labelGrand" for="checkBlog3">
+              <!--L'ARTICLE VERSION GRAND-->
+              <div class="grandBlog">
+                <div class="imgContainer">
+                  <img
+                    src="assets\img\TROTSH.jpg"
+                    alt="The rising of the shield hero"
+                  />
+                </div>
+                <h2>The rising of the shield hero</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Eligendi cumque rem cupiditate explicabo enim quo eos. Dolore,
+                  voluptatum fuga. Optio expedita dolorum tempora ex earum, vel
+                  distinctio ab quisquam non aliquam laudantium laborum possimus
+                  officiis perspiciatis vitae quis! Voluptas, laborum assumenda
+                  nostrum illum neque eum. Voluptatibus unde laudantium iusto
+                  deserunt harum corrupti dolorum consequuntur dignissimos
+                  perferendis ipsa ratione veritatis exercitationem dicta eius
+                  consectetur optio temporibus, ipsam cumque molestias?
+                  Consectetur deleniti hic eaque ratione, ullam voluptas
+                  praesentium dolores. Adipisci, nam. Deleniti, consequuntur ab
+                  dolore, itaque consectetur in, quod magnam quas voluptates
+                  iusto perferendis? Tempora sit impedit ut deleniti ipsum iure
+                  hic magnam, veniam, vitae consequatur voluptatum itaque
+                  officiis cumque magni quas error quidem non quibusdam
+                  molestias incidunt? Repellat, accusantium, blanditiis atque
+                  ipsa est velit repudiandae eius dolorem harum tenetur,
+                  laboriosam ad ducimus praesentium pariatur. Praesentium
+                  laborum repellendus debitis reiciendis saepe laudantium
+                  perspiciatis voluptatum modi. Temporibus commodi quis sequi
+                  qui deleniti ratione dolore doloremque. Perspiciatis beatae
+                  neque non. Quaerat explicabo molestias doloremque nulla!
+                  Repellendus et totam minus, numquam magnam doloribus ipsa
+                  deleniti nisi sunt tenetur eligendi temporibus velit dolores
+                  eius iure culpa atque doloremque, dignissimos, odit voluptate
+                  ea! Esse obcaecati quo, perspiciatis expedita fugit, illum
+                  voluptatibus necessitatibus nam nulla soluta, ipsum iusto
+                  eaque dignissimos. Laborum possimus iusto tempora veniam, id
+                  hic, voluptatem fugit doloribus mollitia, cum nulla temporibus
+                  similique incidunt reprehenderit quam tempore praesentium
+                  dolor placeat expedita nostrum amet? Necessitatibus, autem,
+                  nam doloremque illum distinctio omnis quasi nemo ab ea minima
+                  quibusdam molestiae, nulla facere architecto ipsa maiores!
+                  Temporibus maxime ad laudantium. Pariatur ipsam illo soluta
+                  sapiente, unde facilis qui sed quasi dolor numquam ad
+                  voluptas, voluptatibus at distinctio, fuga officiis alias
+                  voluptatem suscipit itaque eveniet! Quia, reiciendis ab
+                  exercitationem et sed totam in illum delectus, accusantium
+                  molestias rem qui unde dolor neque sint consequatur iste.
+                  Aspernatur, suscipit quas. Labore, cum culpa!
+                </p>
+              </div>
+            </label>
+
+            <!--LABEL (POUR LA CHECKBOX AU DESSUS DE SECTION) DE L'ARTICLE NORMAL -->
+            <label class="labelBlog3" for="checkBlog3">
+              <!--L'ARTICLE NORMAL-->
+              <article>
+                <div class="imgBlog">
+                  <img src="assets\img\TROTSH.jpg" alt="" />
+                </div>
+                <div class="paragrapheBlog">
+                  <h2>the rising of the shield hero</h2>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore dolorem ducimus rerum sit quia, vitae ipsa cupiditate
+                  provident cum dolore eius, debitis eveniet nam iure modi,
+                  molestiae recusandae praesentium? Explicabo blanditiis
+                  molestiae hic suscipit possimus, error fugit ipsam accusamus
+                  reprehenderit. Ratione sed quos modi fuga nam beatae qui
+                  repellendus, est optio perspiciatis consequatur cum rem iusto
+                  officia autem asperiores recusandae? Quae autem aperiam dolore
+                  placeat. Ratione enim autem optio ducimus cupiditate dicta
+                  dolor reprehenderit asperiores tempore vitae quod perferendis,
+                  nesciunt eligendi consequuntur laudantium quam eos! Suscipit
+                  asperiores sint ex repellat, similique fugiat veritatis quod
+                  ipsum pariatur unde alias mollitia! Soluta! Lorem ipsum, dolor
+                  sit amet consectetur adipisicing elit. Modi blanditiis
+                  accusantium vitae in quidem iure provident, fuga atque
+                  voluptate magni sit cupiditate, quae error ut eum minus
+                  praesentium placeat reprehenderit reiciendis facere alias,
+                  ipsum quas odio aspernatur! Adipisci facilis, consectetur
+                  dolor a nam eum aspernatur velit impedit ex, veniam reiciendis
+                  fugit odit? Quisquam, error sapiente! Necessitatibus omnis
+                  voluptatum, magnam fugit asperiores ab blanditiis deleniti
+                  quisquam iusto iure consequatur, obcaecati minima. Aliquid eum
+                  ullam asperiores mollitia ex et voluptatibus, labore rerum
+                  corporis, perferendis natus beatae quaerat tempora autem totam
+                  odio iusto modi commodi maxime quas soluta laborum repellat.
+                  Doloremque dolore aperiam consectetur iste sunt qui soluta
+                  officia? Qui, ea non? Nesciunt, temporibus! Aliquid quam
+                  laudantium sint, magnam consequatur temporibus iure et
+                  necessitatibus eius voluptas voluptatibus, cum aut!
+                  Voluptatibus dolores laudantium fugiat. Totam recusandae,
+                  exercitationem rem quasi excepturi voluptas quod reiciendis,
+                  harum pariatur officia quisquam debitis dicta. Aperiam velit
+                  praesentium est iste quidem amet, totam quis, optio ipsam iure
+                  ratione dolorum excepturi impedit error sunt perferendis odio
+                  necessitatibus quibusdam sint! Repudiandae deleniti officiis
+                  perspiciatis consequatur magnam et perferendis autem expedita
+                  velit, ab recusandae, voluptate nulla reiciendis. Praesentium
+                  dicta deserunt adipisci eaque nesciunt iste voluptas quas, est
+                  culpa soluta inventore temporibus in et.
+                </div>
+              </article>
+            </label>
+          </section>
+        </div>
+        <!--FIN DE LA DIV MAINCONTAINER-->
+      </main>
+      <!--DEBUT DU FOOTER-->
+      <footer>
+        <!--LOGO FOOTER-->
+        <div>
+          <!--LINK VERS MAIL-->
+          <a href="mailto:contact@monsite.com"
+            ><img src="assets\img\mail.svg"
+          /></a>
+        </div>
+        <!--RESEAUX SOCIAUX-->
+        <div>
+          <a href="https://www.facebook.com/"
+            ><img src="assets\img\Facebook.svg"
+          /></a>
+          <a href="https://twitter.com"><img src="assets\img\Twitter.svg" /></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com"
+            ><img src="assets\img\Linkedin.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="assets\img\Instagram.svg" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="#haut_de_page">Retour en haut</a>
+        </div>
+      </footer>
+      <!--FIN FOOTER-->
+    </div>
+    <!--FIN DU BODY CONTAINER-->
+  </body>
+  <!--FIN DU BODY-->
+</html>

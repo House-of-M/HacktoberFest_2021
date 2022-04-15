@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets\css\style.css" rel="stylesheet" />
+    <title>Add</title>
+  </head>
+  <body>
+    <!--DEBUT DU BODY-->
+
+    <!--CHEKBOX POUR LE BOUTON DE MODE DARK/LIGHT-->
+    <input type="checkbox" class="checkboxMod" id="check" />
+
+    <!--BODY CONTAINER-->
+    <div class="bodyContainer">
+      <!-- LABEL + ICONE SI LA CHECKBOX EST UNCHECK-->
+      <label class="labelMod" for="check">
+        <i class="light_icon"><img src="assets/img/torch_on.png" /></i>
+        <!-- <i class="dark_icon"><img src="assets/img/torch_off.png"/></i> -->
+      </label>
+
+      <!--ICONE SI LA CHECKBOX EST CHECK-->
+      <span class="imageMod">
+        <!-- <i class="light_icon"><img src="assets/img/torch_on.png"/></i> -->
+        <i class="dark_icon"><img src="assets/img/torch_off.png" /></i>
+      </span>
+
+      <!--DEBUT DU HEADER-->
+      <header>
+        <img src="assets\img\logo.png" />
+
+        <!-- MENU DE NAVIGATION-->
+        <nav>
+          <a href="index.html">Accueil</a>
+          <a href="blog.html">blog</a>
+          <a href="add.html">add</a>
+          <a href="about_us.html">about us</a>
+        </nav>
+      </header>
+
+      <!--FIN DU HEADER-->
+
+      <!-- DEBUT DE LA DIV FORMULAIRE, ANCRE HAUT DE PAGE-->
+      <div class="form" id="haut_de_page">
+        <!--DEBUT DU FORMULAIRE-->
+        <form action="script.php" method="post" enctype="multipart/form-data">
+          <!--DIV GRID DEBUT-->
+          <div class="form_grid">
+            <!--DIV POUR LES NOMS-->
+            <div class="noms">
+              <label for="nom"></label>
+              <input
+                id="nom"
+                type="text"
+                name="name"
+                placeholder="Nom"
+                minlength="2"
+                maxlenght="30"
+                required
+              />
+              <label for="prenom"></label>
+              <input
+                type="text"
+                id="prenom"
+                name="firstname"
+                placeholder="Prénom"
+                minlenght="2"
+                maxlenght="30"
+                required
+              />
+            </div>
+            <!--FIN DE LA DIV NOMS-->
+
+            <!--DIV POUR L'EMAIL-->
+            <div class="email">
+              <label for="email"></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="VotreEmail@Truc.com"
+                minlenght="3"
+                maxlenght="40"
+                required
+              />
+            </div>
+            <!--FIN DE LA DIV EMAIL-->
+
+            <!--DIV TITRE DE L'ARTICLE-->
+            <div class="titreArticle">
+              <label for="titreArticle"></label>
+              <input
+                type="text"
+                id="titreArticle"
+                name="titre"
+                placeholder="Titre de l'article"
+                minlenght="3"
+                maxlenght="30"
+                required
+              />
+            </div>
+            <!--FIN DE LA DIV DU TITRE DE L'ARTICLE-->
+
+            <!--DIV DE L'AJOUT D'IMAGE DE TYPE JPEG OU PNG SEULEMENT-->
+            <div class="fichier">
+              <label for="imgArticle">Ajoutez une image a votre article</label>
+              <input
+                type="file"
+                id="imgArticle"
+                name="imgArticle"
+                accept="image/png, image/jpeg"
+              />
+            </div>
+            <!--FIN DE LA DIV AJOUT D'IMAGE-->
+
+            <!--DIV DE L'AJOUT DU TEXTE DE L'ARTICLE-->
+            <div class="textarea">
+              <textarea
+                id="article"
+                name="article"
+                required
+                minlength="100"
+                maxlength="400"
+              >
+Entrez le texte de l'article ici.....</textarea
+              >
+            </div>
+            <!--FIN DE LA DIV TEXTE DE L'ARTICLE-->
+
+            <!--BOUTON TYPE SUBMIT-->
+            <button type="submit">Envoyer</button>
+          </div>
+          <!--FIN DE LA DIV GRID-->
+        </form>
+        <!--FIN DU FORMULAIRE-->
+      </div>
+      <!--FIN DE LA DIV CONTAINER DU FORMULAIRE DE LA PAGE-->
+
+      <!--DEBUT DU FOOTER-->
+      <footer>
+        <!--LOGO FOOTER-->
+        <div>
+          <!--LINK VERS MAIL-->
+          <a href="mailto:contact@monsite.com"
+            ><img src="assets\img\mail.svg"
+          /></a>
+        </div>
+        <!--RESEAUX SOCIAUX-->
+        <div>
+          <a href="https://www.facebook.com/"
+            ><img src="assets\img\Facebook.svg"
+          /></a>
+          <a href="https://twitter.com"><img src="assets\img\Twitter.svg" /></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com"
+            ><img src="assets\img\Linkedin.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="assets\img\Instagram.svg" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="#haut_de_page">Retour en haut</a>
+        </div>
+      </footer>
+      <!--FIN FOOTER-->
+    </div>
+    <!--FIN DU BODY CONTAINER-->
+  </body>
+  <!--FIN DU BODY-->
+</html>

@@ -1,0 +1,502 @@
+/*Déclaration de variable */
+:root {
+  --white: #f0f0f0;
+  --black: #1b1717;
+  --grey: #403d3c;
+  --bg: var(--white);
+  --txt: var(--black);
+  --dark-opacity: 0;
+  --light-opacity: 1;
+  --afficher: flexbox;
+  --cacher: none;
+}
+
+/*Reset des marge et boxsizing*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*vitesse de scrolling naturel*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*header et le fixer au top de l'écran*/
+header {
+  width: 100%;
+  min-height: 4rem;
+  position: fixed;
+  opacity: 0.9;
+  display: flex;
+  background-color: #1b1717;
+  z-index: 4;
+}
+
+/*Logo du header absent en version mobile*/
+header img {
+  display: none;
+}
+
+/*navigation Menu Principal*/
+a {
+  text-decoration: none;
+  color: #ce1212;
+}
+
+/*le table pour retirer l'écart de marge entre les barres et les a*/
+nav {
+  width: 100%;
+  display: table;
+}
+
+/*taille inférieur a 50% pour la version mobile et qu'il y ai de <a> par ligne*/
+nav a {
+  width: 49.9%;
+  height: 4rem;
+  line-height: 4rem;
+  font-style: italic;
+  font-size: larger;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  opacity: 0.9;
+  background-color: #1b1717;
+}
+
+/*ajout de barre | a l'aide des bordure a droite de chaque <a> */
+nav a:nth-last-of-type(n + 1) {
+  border-right: 2px solid #810000;
+}
+
+/*modification lors du survol des <a> de la nav*/
+nav a:hover {
+  color: #1b1717;
+  background-color: #ce1212;
+  transition: 0.5s;
+}
+
+/*taille du maincontainer, centrage, et padding sous le menu fixe*/
+.mainContainer {
+  width: 90%;
+  margin: auto;
+  padding-top: 8rem;
+
+  /* border: 2px solid red; */
+}
+
+/*mise en page du container des articles de l'index*/
+.articleAccueil {
+  width: 100%;
+  padding: 1rem;
+  margin: 2rem 0;
+  border: 3px solid var(--txt);
+}
+
+/*alignement et marge des paragraphe*/
+p {
+  margin: 1rem;
+  text-align: justify;
+}
+
+/*container des images de l'index et des grands articles du blog*/
+.imgContainer {
+  width: 100%;
+  height: 60vw;
+}
+
+/*Propriété des images contenu dans imgContainer*/
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Grid du formulaire*/
+.form_grid {
+  padding: 10rem 0 1rem 0;
+  display: grid;
+  width: 90%;
+  margin: auto 2% auto auto;
+  /* height: 80vh; */
+  grid-template-columns: 100%;
+  grid-template-rows: 10vh 10vh 10vh 5vh 30vh;
+}
+
+/*propriété des inputs*/
+input {
+  width: 90.6%;
+  height: 3rem;
+  border: 2px solid #1b1717;
+  border-radius: 1rem;
+}
+
+/*enlève les bordure sur le input pour l'ajout de fichier image du formulaire*/
+.fichier input {
+  border: none;
+  border-radius: 0;
+}
+
+/*réduit la taille des inputs noms et  fichier*/
+.noms input,
+.fichier input {
+  width: 45%;
+}
+
+/*change la couleur de la police d'écriture de l'input titre d'article*/
+.titreArticle input {
+  color: #ce1212;
+}
+
+/*modification la taille du textearea */
+textarea {
+  width: 90.6%;
+  height: 90%;
+  border: 2px solid #1b1717;
+  border-radius: 1rem;
+}
+
+/*modification de la taille et couleur du bouton submit*/
+button {
+  width: 50%;
+  margin-left: 20%;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/*taille, couleur, padding du footer*/
+footer {
+  padding-top: 1rem;
+  height: 10rem;
+  background-color: #1b1717;
+}
+
+/*alignement du texte pour le h2 et les div du footer*/
+footer div,
+h2 {
+  text-align: center;
+}
+
+/*taille des icone comrpis dans les <a> (SVG)*/
+a img {
+  width: 2rem;
+}
+
+/*couleur et padding des titres h2*/
+h2 {
+  padding-top: 1rem;
+  color: #ce1212;
+  text-transform: uppercase;
+}
+
+/*blog*/
+
+/*mise en page des articles de la page blog (version petit) utilisation de grid*/
+section article {
+  margin: 2rem 0;
+  border: 3px solid var(--txt);
+  width: 100%;
+
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100%;
+}
+
+/*padding des titre des articles de la section blog*/
+section article h2 {
+  padding: 0;
+}
+
+/*taille du container des images des articles du blog*/
+.imgBlog {
+  width: 100%;
+  height: 100%;
+}
+
+/*mise en place de l'image dans son conteneur*/
+.imgBlog img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*mise en place des paragraphe des article du blog et gestion de l'overflow*/
+.paragrapheBlog {
+  padding: 0 1rem;
+  text-align: justify;
+  overflow-y: hidden;
+}
+
+/*mise en page de la partie about us*/
+
+/*mise en place de l'image dans son conteneur mais version mobile display none*/
+.imgTitreAbout img {
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover; */
+  display: none;
+}
+
+/*gestion des conteneurs et mise en page des deux div de la page about us*/
+.descriptionMoi,
+.descriptionSite {
+  padding: 2rem;
+  margin: 1rem 0;
+  display: flexbox;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid var(--txt); */
+}
+
+/*conteneur des images des 2 div article de la page about us*/
+.imgAbout {
+  width: 100%;
+  height: 100%;
+}
+
+/*gestion de l'image dans son conteneur*/
+.imgAbout img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*inversion des blocs dans le conteneur desciptionSite (image et texte inversé)*/
+.descriptionSite {
+  flex-direction: row-reverse;
+}
+
+/*gestion du centrage a droite de l'image dans son conteneur pour l'image dans description site*/
+.descriptionSite .imgAbout img {
+  object-position: center right;
+}
+
+/*gestion du responsive sur grand écran plus de 640px*/
+@media screen and (min-width: 640px) {
+  /*mise en place d'une hauteur fixe notament pour pas que le logo étire le header*/
+  header {
+    height: 4rem;
+  }
+
+  /*mise en place du logo du header*/
+  header img {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    display: flex;
+  }
+
+  /*taille changé des <a> de la barre de navigation*/
+  nav a {
+    width: 8rem;
+  }
+
+  /*changement du padding top du maincontainer car le header est plus petit*/
+  .mainContainer {
+    padding-top: 4rem;
+  }
+
+  /*taille des article de la page index*/
+  .articleAccueil {
+    width: 66%;
+  }
+
+  /*décalage de 1/3 des articles paire a droite*/
+  .articleAccueil:nth-of-type(2n) {
+    margin-left: 33%;
+  }
+
+  /*mise en place du padding pour le formulaire de la page add et d'une taille*/
+  .form_grid {
+    padding: 5rem 0 1rem 0;
+    height: 87vh;
+  }
+
+  /*mise en ligne des articles de la page about us*/
+  .descriptionMoi,
+  .descriptionSite {
+    display: inline-flex;
+    margin: 0;
+  }
+
+  /*affichage des articles contenu dans le mainContainer lors du survol du mainContainer (sa m'a évité le cliping)*/
+  .mainContainer:hover .aboutArticle {
+    display: block;
+  }
+
+  /*affichage des images en grand lors du survol de l'article*/
+  .descriptionMoi:hover .imgAbout,
+  .descriptionSite:hover .imgAbout {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*affichage de l'aticle en grand lors du survol de se dernier*/
+  .descriptionMoi:hover,
+  .descriptionSite:hover {
+    height: 100%;
+    display: block;
+  }
+
+  /*permet de masquer l'article non survolé */
+  .aboutArticle:hover .descriptionMoi:not(:hover),
+  .aboutArticle:hover .descriptionSite:not(:hover) {
+    display: none;
+  }
+
+  /*taille du conteneur des images des articles de la page about us*/
+  .imgAbout {
+    width: 120rem;
+  }
+
+  /*taille du conteneur de l'image titre de la page about US*/
+  .imgTitreAbout {
+    width: 100%;
+    height: 40vh;
+  }
+
+  /*mise en place de l'image titre (en-tête) dans son conteneur  de la page about us et afficher lors de la version grand écran*/
+  .imgTitreAbout img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+  }
+}
+
+/*light and dark mode*/
+.labelMod {
+  position: fixed;
+  margin-bottom: 0.3rem;
+  margin-right: 0.2rem;
+  padding-top: 0.2rem;
+  right: 0;
+  bottom: 0;
+  width: 65px;
+  height: 65px;
+  border-radius: 10%;
+  background-color: var(--black);
+  opacity: var(--light-opacity);
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*masque la checkbox du dark/light mode*/
+.checkboxMod {
+  display: none;
+}
+
+/*image qui apparait quand on est en dark mode*/
+.imageMod {
+  position: fixed;
+  margin-bottom: 0.3rem;
+  margin-right: 0.2rem;
+  right: 0;
+  bottom: 0;
+  width: 65px;
+  height: 65px;
+  border-radius: 10%;
+  background-color: var(--white);
+  opacity: var(--dark-opacity);
+}
+
+/*ce qui change dans le bodyContainer lorsque le darkmode est activé*/
+.checkboxMod:checked + .bodyContainer {
+  --dark-opacity: 1;
+  --light-opacity: 0;
+  --bg: var(--grey);
+  --txt: var(--white);
+  background-color: var(--bg);
+  color: var(--txt);
+}
+
+/* .bodyContainer {
+  background-color: var(--bg);
+  color: var(--txt);
+} */
+
+/*page Blog modification on clic */
+
+/*cache les checkbox des articles de la page blog*/
+.checkboxBlog1,
+.checkboxBlog2,
+.checkboxBlog3 {
+  display: none;
+}
+
+/*curseur lien pointeur sur les articles*/
+.labelBlog1,
+.labelBlog2,
+.labelBlog3 {
+  display: var(--afficher);
+  cursor: pointer;
+}
+
+.grandBlog {
+  width: 100%;
+  display: var(--cacher);
+  cursor: pointer;
+}
+
+/*cache l'article (petit) du blog au clic (et inversement)*/
+.checkboxBlog1:checked + section .labelBlog1,
+.checkboxBlog2:checked + section .labelBlog2,
+.checkboxBlog3:checked + section .labelBlog3 {
+  display: var(--cacher);
+}
+
+/*affiche la version grande de l'article sur le même clic (et inversement)*/
+.checkboxBlog1:checked + section label .grandBlog,
+.checkboxBlog2:checked + section label .grandBlog,
+.checkboxBlog3:checked + section label .grandBlog {
+  display: var(--afficher);
+}
+
+/*ajoute une bordure pour le grand article au clic */
+.checkboxBlog1:checked + section,
+.checkboxBlog2:checked + section,
+.checkboxBlog3:checked + section {
+  border: 3px solid var(--txt);
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+/*test animation css*/
+
+/*dans la page blog affiche une boxshadow sur article*/
+/*et les bordur change au survol*/
+label article {
+  box-shadow: 1rem 1rem var(--txt);
+  transition: all 0.6s ease;
+}
+.imgBlog img {
+  transition: all 0.6s ease;
+}
+label article:hover {
+  border-radius: 50% 50% 50% 50% /5% 5% 5% 5%;
+  box-shadow: 0.5rem 0.5rem var(--txt);
+}
+label article:hover .imgBlog img {
+  border-radius: 48% 0% 0% 48% / 4% 0% 0% 4%;
+}
+
+/*petite animation sur le bouton*/
+button {
+  background-image: linear-gradient(to right, #000000, #df2f2f, #8e0000);
+  background-size: 200%;
+  transition: 0.8s;
+}
+button:hover {
+  background-position: right;
+}
+
+a img {
+  transition: 0.8s ease-in-out;
+}
+
+a img:hover {
+  transform: scale(2) rotate(-360deg);
+}

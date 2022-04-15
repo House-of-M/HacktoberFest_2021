@@ -1,0 +1,1 @@
+window.alert(`fichier de anthony`);
